@@ -1,0 +1,163 @@
+/* Color palette */
+
+:root {
+  --negro: rgb(11, 9, 10);
+  --negroClaro: rgb(22, 26, 29);
+  --primarioOscuro: rgb(102, 7, 8);
+  --primario: rgb(234, 0, 6);
+  --primarioClaro: rgb(186, 24, 27);
+  --primarioPastel: rgb(229, 56, 59);
+  --gris: rgb(177, 167, 166);
+  --grisClaro: rgb(211, 211, 211);
+  --grisPastel: rgb(245, 243, 244);
+  --blanco: rgb(255, 255, 255);
+  --fuentePrincipal: "Roboto Condensed", sans-serif;
+}
+
+/* Media queries at 600px, 768px, 992px, 1200px */
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: var(--fuentePrincipal);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.logo {
+  width: 20%;
+}
+
+.sm-display {
+  display: none;
+}
+
+.offcanvas-title {
+  font-size: 2.5rem;
+}
+
+.offcanvas-padding {
+  padding-left: 1.5rem;
+}
+
+.nav-item {
+  font-size: 1.5rem;
+}
+
+.top-container-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.25rem;
+  margin-right: 4rem;
+}
+
+.nav-bg {
+  background-color: var(--primario);
+  margin-top: 1.5rem;
+}
+
+.navegacion-principal {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.navegacion-principal a {
+  justify-content: space-around;
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.navegacion-principal a:hover {
+  background-color: var(--blanco);
+  color: var(--negro);
+}
+
+.contenedor {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background-color: var(--primario);
+  color: var(--blanco);
+  text-align: center;
+  margin-top: auto;
+  padding: 0.5rem 0;
+}
+
+.footer-legend {
+    display: none;
+}
+
+
+@media (min-width: 350px) {
+  .top-container-title {
+    margin-right: 8rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .xs-display {
+    display: none;
+  }
+  .navegacion-principal {
+    display: flex;
+    flex-direction: row;
+  }
+  .top-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+  }
+  .top-container-title {
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    margin-right: 2rem;
+  }
+  .logo-container {
+    width: 10%;
+  }
+  .logo {
+    width: 100%;
+  }
+  .footer-legend {
+      display: inline;
+  }
+  footer {
+      font-size: 1.25rem;
+      padding: 1rem 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .top-container-title {
+    font-size: 2.5rem;
+  }
+  .navegacion-principal a {
+    font-size: 2.5rem;
+  }
+  .contenedor {
+    max-width: 80rem;
+  }
+  footer {
+      font-size: 1.5rem;
+      padding: 1.25rem 0;
+  }
+}
