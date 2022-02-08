@@ -65,8 +65,7 @@ html {
 }
 
 .navegacion-principal {
-  flex-direction: row;
-  justify-content: space-around;
+  display: none;
 }
 
 .navegacion-principal a {
@@ -120,6 +119,7 @@ footer {
   .navegacion-principal {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
   }
   .top-container {
     display: flex;
