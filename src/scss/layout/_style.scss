@@ -78,8 +78,8 @@
 
     .about {
         .us-first-column {
-            padding-right: 0;
-            padding-left: 0;
+            padding-right: 1rem;
+            padding-left: 1rem;
 
             @include m.desktopXL {
                 padding-right: 4rem;
