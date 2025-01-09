@@ -79,6 +79,7 @@
     .about {
         .us-first-column {
             padding-right: 0;
+            padding-left: 0;
 
             @include m.desktopXL {
                 padding-right: 4rem;
