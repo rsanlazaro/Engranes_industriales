@@ -29,3 +29,9 @@ function languages() {
         console.log("Francais");
     });
 }
+
+document.getElementById('submit').addEventListener('click', function (e) {
+    e.preventDefault();
+    const name = document.getElementById('sent-message');
+    name.classList.add('d-block');
+});
