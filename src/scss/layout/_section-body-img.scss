@@ -1,0 +1,51 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.img-text {
+    margin: 1rem;
+    display: grid;
+    gap: 1rem;
+    .img-text-img {
+        width: 100%;
+        padding: 10vw;
+        img {
+            width: 100%;
+        }
+    }
+    .img-text-text {
+        padding: 0 5vw;
+        text-align: center;
+    }
+    @include m.phone {
+        grid-template-columns: 1fr 1fr;
+        .img-text-text {
+            text-align: justify;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            padding-left: 2vw;
+            padding-right: 7.5vw;
+        }
+        .img-text-img {
+            padding-right: 2.5vw;
+        }
+    }
+    @include m.tablet {
+        .img-text-text {
+            padding-right: 15vw;
+            padding-left: 5vw;
+        }
+        .img-text-img {
+            padding-left: 15vw;
+        }
+    }
+    @include m.tablet {
+        .img-text-text {
+            padding-right: 15vw;
+            padding-left: 5vw;
+        }
+        .img-text-img {
+            padding-left: 15vw;
+        }
+    }
+}
