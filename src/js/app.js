@@ -31,5 +31,5 @@ function languages() {
 }
 
 document.getElementById("return").addEventListener("click", function() {
-    window.location.href = "www.engranesindustriales.com";
+    window.location.href = "/";
 });
