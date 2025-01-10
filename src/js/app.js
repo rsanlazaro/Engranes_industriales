@@ -30,8 +30,6 @@ function languages() {
     });
 }
 
-document.getElementById('submit').addEventListener('click', function (e) {
-    e.preventDefault();
-    const name = document.getElementById('sent-message');
-    name.classList.add('d-block');
+document.getElementById("return").addEventListener("click", function() {
+    window.location.href = "www.engranesindustriales.com";
 });

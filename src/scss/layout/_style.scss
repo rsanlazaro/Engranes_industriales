@@ -257,3 +257,33 @@
 
     padding-bottom: 0;
 }
+
+
+.thank-you {
+    .text-success {
+        fill: #7c1010;
+    }
+    .btn-outline-success {
+        border-color: #7c1010;
+        color: #7c1010;
+        &:hover {
+            background-color: #7c1010;
+            border-color: #7c1010;
+            color: white;
+        }
+        &:focus-visible {
+            background-color: #7c1010;
+            border-color: #7c1010;
+            box-shadow: 0 0 0 0.25rem #7c101057 !important;
+        }
+    }
+    .btn-outline-success:not(.btn-check)+.btn:active {
+        background-color: #7c1010;
+        border-color: #7c1010;
+    }
+    .btn:active {
+        background-color: #7c1010;
+        border-color: #7c1010;
+    }
+
+}
