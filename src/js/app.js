@@ -31,6 +31,5 @@ function languages() {
 }
 
 document.getElementById("return").addEventListener("click", function() {
-    const rootPath = `${window.location.origin}/`; // Root path of the site
-    window.location.href = rootPath;
+    window.location.href = "/";
 });
