@@ -196,6 +196,12 @@
 
     .footer-top {
         padding-top: 2rem;
+        .phone {
+            color: v.$white !important;
+            &:hover {
+                color: lighten(#7c1010,10%) !important;
+            }
+        }
     }
 
     .footer-about {
